@@ -34,13 +34,19 @@ WELCOME_SRC = "assets/img/welcome.png"
 if not os.path.exists(os.path.join(ROOT, WELCOME_SRC)):
     WELCOME_SRC = "assets/img/poses/13.png"
 
+# Approach image source: use assets/img/approach.png when present, otherwise
+# fall back to the canonical practice photograph.
+APPROACH_SRC = "assets/img/approach.png"
+if not os.path.exists(os.path.join(ROOT, APPROACH_SRC)):
+    APPROACH_SRC = "assets/img/poses/5.png"
+
 JOBS = [
     # (source, output-path-suffix, max-dimension, quality)
     ("assets/img/slider/sliders.png",     "hero/hero.jpg",        1600, 82),
     ("assets/img/slider/sliders.png",     "hero/hero-md.jpg",      1200, 82),
     (WELCOME_SRC,                         "sections/welcome.jpg", 1200, 82),
     ("assets/img/poses/12.png",            "sections/story.jpg",   1200, 82),
-    ("assets/img/poses/5.png",             "sections/approach.jpg",1200, 82),
+    (APPROACH_SRC,                        "sections/approach.jpg",1200, 82),
     ("assets/img/poses/6.png",             "sections/teacher.jpg", 1100, 82),
     ("assets/img/awards/award-photo.jpg",  "sections/award.jpg",   1280, 82),
     ("assets/img/awards/award-photo.jpg",  "gallery/gal-award.jpg", 640, 78),
@@ -95,7 +101,7 @@ def main():
         n += 1
 
     # Yoga poses: gallery thumbnails + lightbox copies
-    pose_order = list(range(1, 15)) + [16, 17]
+    pose_order = list(range(1, 16))
     for i, n_ in enumerate(pose_order, start=1):
         src = os.path.join(ROOT, "assets", "img", "poses", "%d.png" % n_)
         if not os.path.exists(src):

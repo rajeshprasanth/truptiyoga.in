@@ -72,9 +72,9 @@ window.TRUPTI_DATA = {
     {
       name: "Personal / One-to-One Sessions",
       description: "Individual guidance tailored to your body, needs, and goals, at your own pace.",
-      suitable: ["By appointment"],
+      suitable: [],
       duration: "",
-      schedule: "By appointment"
+      schedule: ""
     }
   ],
 
@@ -156,7 +156,6 @@ window.TRUPTI_DATA = {
       { src: "assets/img-gen/gallery/pose-full-13.jpg", thumb: "assets/img-gen/gallery/gal-pose-13.jpg", cat: "poses", alt: "Yoga pose at Trupti Yoga Studio", caption: "Yoga pose · 13" },
       { src: "assets/img-gen/gallery/pose-full-14.jpg", thumb: "assets/img-gen/gallery/gal-pose-14.jpg", cat: "poses", alt: "Yoga pose at Trupti Yoga Studio", caption: "Yoga pose · 14" },
       { src: "assets/img-gen/gallery/pose-full-15.jpg", thumb: "assets/img-gen/gallery/gal-pose-15.jpg", cat: "poses", alt: "Yoga pose at Trupti Yoga Studio", caption: "Yoga pose · 15" },
-      { src: "assets/img-gen/gallery/pose-full-16.jpg", thumb: "assets/img-gen/gallery/gal-pose-16.jpg", cat: "poses", alt: "Yoga pose at Trupti Yoga Studio", caption: "Yoga pose · 16" },
       { src: "assets/img/media/media-1.jpg", thumb: "assets/img-gen/gallery/gal-media-01.jpg", cat: "press", alt: "Press and media coverage of Trupti Yoga Studio", caption: "Press & media coverage" },
       { src: "assets/img/media/media-2.jpg", thumb: "assets/img-gen/gallery/gal-media-02.jpg", cat: "press", alt: "Press and media coverage of Trupti Yoga Studio", caption: "Press & media coverage" },
       { src: "assets/img/media/media-3.jpg", thumb: "assets/img-gen/gallery/gal-media-03.jpg", cat: "press", alt: "Press and media coverage of Trupti Yoga Studio", caption: "Press & media coverage" },
